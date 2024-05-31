@@ -29,14 +29,14 @@ const tukarProduk = () => {
             totalDibayar += item.harga;
             poinTersisa -= item.poin;
         } else {
-            break; // Keluar dari loop jika poin tidak cukup untuk membeli produk
+            break; 
         }
     }
 
     return { produkDibeli, totalDibayar };
 };
 
-// Uji fungsi-fungsi tersebut
+
 console.log("Produk dengan poin maksimal:", dapatkanProdukDenganPoinMaksimal());
 console.log("Poin tersisa setelah membeli produk dengan poin maksimal:", hitungPoinTersisa());
 console.log("Produk yang ditukar:", tukarProduk());
